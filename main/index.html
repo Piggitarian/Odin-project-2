@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-16">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Rock-Paper-Scissors -->
+    <h1>Rock - paper - Scissors</h1>
+
+  <div class="body">
+      <button class="magnet" onclick="Rock(); testing(); resultRock();"><span class="text"><img src="../assests /image.png" alt=""></span></button>
+      <button class="magnet" onclick="Paper(); testing(); resultPaper();"><span class="text"><img src="../assests /image3.png" alt=""></span></button>
+      <button class="magnet" onclick="Scissors(); testing(); resultScissors()"><span class="text"><img src="../assests /image2.png" alt=""></span></button>
+  </div>
+  <div class="scre">
+    <p>Score</p>
+    <p>Player : <span id="PScore">0</span> -- Tie : <span id="tie">0</span> -- Computer : <span id="Cscore">0</span></p>
+    <p class="Round"></p>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="button.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

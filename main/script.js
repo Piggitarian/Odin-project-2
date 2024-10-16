@@ -3,17 +3,29 @@ let humanChoice;
 let humanScore = 0;
 let ComputerScore = 0;
 let Tie = 0;
+let Round = 0;
+
+const PScore = document.querySelector("#PScore");
+const CScore = document.querySelector("#Cscore");
+const tiw = document.querySelector("#tie");
+const result = document.querySelector(".Round");
 
 function Rock(){
+  Round++;
   humanChoice = "Rock";
+  round();
 };
 
 function Paper(){
   humanChoice = "Paper";
+  Round++;
+  round();
 };
 
 function Scissors(){
+  Round++;
   humanChoice = "Scissors";
+  round();
 };
 
 
@@ -47,6 +59,8 @@ function resultRock(){
     Tie++;
     console.log("tie!!" , Tie);
   }
+
+  updateScore();
 };
 
 function resultPaper(){
@@ -61,7 +75,9 @@ function resultPaper(){
     humanScore++;
     console.log("You win" , humanScore);
   };
+  updateScore();
 };
+
 
 function resultScissors() {
   getComputerChoice();
@@ -75,15 +91,35 @@ function resultScissors() {
     ComputerScore++;
     console.log("You lose" , ComputerScore);
   }
+  updateScore();
 };
 
 
 
+function updateScore(){
 
+PScore.innerHTML = humanScore;
+  CScore.innerHTML = ComputerScore;
+  tiw.innerHTML = Tie;
+}
 
+function round(){
+  if (Round = 5 & humanScore > ComputerScore) {
+    result.innerHTML = "You win! This Round :)"
+}   else if(Round = 5 & humanScore < ComputerScore){
+  result.innerHTML = "Computer Wins This round :( "
+      };
+      if (Round > 5) {
+        Round = 0;
+        humanScore = 0;
+        ComputerScore = 0;
+        Tie = 0;
+        result.innerHTML = "";
+      };
+    
+}
 
 
 
 ///////////////////////////magnet shit//////////////////////
 
- 
