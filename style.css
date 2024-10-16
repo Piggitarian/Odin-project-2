@@ -1,0 +1,13 @@
+.magneto{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: gray;
+  color: wheat;
+  cursor: pointer;
+}
