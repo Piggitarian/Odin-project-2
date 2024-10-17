@@ -10,7 +10,7 @@ const activateMagnet = (event) => {
   const newX = (event.clientX - boundBox.left) / magnet.offsetWidth - 0.5;
   const newY = (event.clientY - boundBox.top) / magnet.offsetHeight - 0.5;
   const magnetPower = 40;
-  const magnetTextPower = 80;
+  const magnetTextPower = 50;
 
   //move button to new position
 
