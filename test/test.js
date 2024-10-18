@@ -30,7 +30,7 @@ const activateMagnet = (event) => {
   });
 };
 
-//Mouse leave 
+//Mouse leave
 
 const resetMagnet = (event) => {
   //move btn to its original pos

@@ -1,4 +1,4 @@
-function rook(){
+function rook(){ // i made each for button because i had no  idea how to loop through an array ik .forEach but i was scared and found this better 
 const magnet = document.querySelector(".magnet");
 const magnetText = document.querySelector(".magnet .text");
 
@@ -18,7 +18,7 @@ const activateMagnet = (event) => {
     duration: 1,
     x: newX * magnetPower,
     y: newY * magnetPower,
-    ease: "power4.out",
+    ease: "power4.out",//css
 
   });
 
@@ -36,9 +36,9 @@ const resetMagnet = (event) => {
   //move btn to its original pos
   gsap.to(magnet, {
     duration: 1,
-    x: 0,
+    x: 0,//this relative to the button or box
     y: 0,
-    ease: "elastic.out",
+    ease: "elastic.out",//css
   });
 
   //move btn text to original
@@ -46,7 +46,7 @@ const resetMagnet = (event) => {
     duration: 1,
     x: 0,
     y: 0,
-    ease: "elastic.out",
+    ease: "elastic.out",//css
    });
 };
 
